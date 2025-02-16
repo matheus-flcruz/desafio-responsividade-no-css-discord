@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+    --color-primaria: #000;
+    --color-secundaria: #fff;
+    --color1: #23272A;
 }
 
 header {
@@ -20,7 +23,9 @@ header {
     margin-top: 4.31rem;
     padding: 0 1.5rem;
     gap: 1.5rem;
-    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header-content h1 {
@@ -29,6 +34,84 @@ header {
     height: 4rem;
     font-size: 2rem;
     font-weight: 400;
-    color: #fff;
-    /* background-color: rebeccapurple; */
+    color: var(--color-secundaria);
+}
+
+.header-content p {
+    width: 23.81rem;
+    height: 8.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-secundaria);
+}
+
+.button-group {
+    width: 23,81rem;
+    height: 7.62rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.download-button {
+    height: 3.37rem;
+    border-radius: 1.75rem;
+    background-color:var(--color-secundaria);
+}
+
+.open-button {
+    height: 3.37rem;
+    border-radius: 1.75rem;
+    background-color: var(--color-primaria);
+    color: var(--color-secundaria);
+}
+
+.section {
+    width: 100%;
+    height: 31.69rem;
+    padding: 2.5rem 1.5rem;
+    gap: 1.69rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#section-1 {
+    height: 35.813rem;
+}
+
+#section-4 {
+    height: 35rem;
+}
+
+.section-image {
+    width: 23.69rem;
+    height: 15.75rem;
+}
+
+#section-1 h2 {
+    width: 23.125rem;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color1);
+}
+
+.section p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color1);
+}
+
+footer {
+    width: 100%;
+    height: 8.75rem;
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
