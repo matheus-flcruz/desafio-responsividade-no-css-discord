@@ -7,10 +7,12 @@
     font-family: "Open Sans", sans-serif;
     --color-primaria: #000;
     --color-secundaria: #fff;
+    --color-terciaria: #f6f6f6;
+    
     --color1: #23272A;
 }
 
-header {
+ header {
     width: 100%;
     height: 31.56rem;
     background-image: url(../imgs/header-background.png);
@@ -87,6 +89,10 @@ header {
     height: 35rem;
 }
 
+#section-2, #section-4 {
+    background-color: var(--color-terciaria);
+}
+
 .section-image {
     width: 23.69rem;
     height: 15.75rem;
@@ -124,6 +130,57 @@ footer {
         background-image: url(../imgs/header-background2.png);
         background-repeat: no-repeat;
         background-size: auto;
+        align-items: center;
         justify-content: center;
+    }
+
+    .header-content {
+        width: 47.31rem;
+        height: 16.87rem;
+       text-align: center;
+       align-items: center;
+       display: flex;
+    }
+
+    .header-content p {
+        width: 47.31rem;
+        height: 16.87rem;
+       align-items: center;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .download-button {
+        width: 12.81rem;
+    }
+
+    .open-button {
+        width: 17.56rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section-1 {
+        width: 60.69rem;
+        height: 24.62rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    #section-2 {
+        width: 100%;
+        height: 28rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
     }
 }
