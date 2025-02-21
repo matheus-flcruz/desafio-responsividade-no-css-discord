@@ -193,9 +193,9 @@ footer {
         justify-content: center;
     }
 
-    .section-text2 {
+    .section-text2, .section-text3 {
         width: 21.9375rem;
-        height: 13.25rem;
+        height: 14rem;
     }
 
     .section-image {
@@ -217,11 +217,6 @@ footer {
         gap: 1rem;
         align-items: center;
         justify-content: center;
-    }
-
-    .section-text3 {
-        width: 21.9375rem;
-        height: 14.265rem;
     }
 
     #section-4 {
