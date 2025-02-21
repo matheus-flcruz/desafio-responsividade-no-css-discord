@@ -34,4 +34,4 @@ Laptop: max-width: 1280px
 
 ## 🔗 Links
 
-Projeto online (GitHub Pages)
+[Projeto online (GitHub Pages)](https://matheus-flcruz.github.io/desafio-responsividade-no-css-discord/)
