@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+:root {
+    --color-primaria: #000;
+    --color-secundaria: #fff;
+    --color-terciaria: #f6f6f6; 
+    --color1: #23272A;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
-    --color-primaria: #000;
-    --color-secundaria: #fff;
-    --color-terciaria: #f6f6f6;
-    
-    --color1: #23272A;
 }
 
  header {
@@ -47,7 +49,7 @@
 }
 
 .button-group {
-    width: 23,81rem;
+    width: 31.275rem;
     height: 7.62rem;
     display: flex;
     flex-direction: column;
@@ -57,15 +59,17 @@
     text-align: center;
 }
 
-.download-button {
+button {
+    width: 23.8125rem;
     height: 3.37rem;
     border-radius: 1.75rem;
+}
+
+.download-button {
     background-color:var(--color-secundaria);
 }
 
 .open-button {
-    height: 3.37rem;
-    border-radius: 1.75rem;
     background-color: var(--color-primaria);
     color: var(--color-secundaria);
 }
@@ -123,29 +127,23 @@ footer {
     justify-content: center;
 }
 
-@media screen and (min-width: 431px) {
+@media screen and (min-width: 27rem) { 
     header {
         width: 100%;
-        height: 28.69rem;
+        height: 28.6875rem;
         background-image: url(../imgs/header-background2.png);
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: cover;
         align-items: center;
         justify-content: center;
     }
 
-    .header-content {
+    .header-content, .header-content p {
         width: 47.31rem;
         height: 16.87rem;
-       text-align: center;
-       align-items: center;
-       display: flex;
-    }
-
-    .header-content p {
-        width: 47.31rem;
-        height: 16.87rem;
-       align-items: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
     }
 
     .button-group {
@@ -154,11 +152,15 @@ footer {
     }
 
     .download-button {
-        width: 12.81rem;
+        width: 12.8125rem;
+        min-width: 150px;
+        padding: 10px 20px;
     }
 
     .open-button {
-        width: 17.56rem;
+        width: 17.5625rem;
+        min-width: 150px;
+        padding: 10px 20px;
     }
 
     main {
@@ -168,12 +170,17 @@ footer {
         justify-content: center;
     }
 
+    .section h2 {
+        font-size: 2.5rem;
+    }
+
     #section-1 {
         width: 60.69rem;
-        height: 24.62rem;
+        height: 24.625rem;
         display: flex;
         flex-direction: row;
         gap: 1rem;
+        margin: 2.5rem 0;
     }
 
     #section-2 {
@@ -182,5 +189,78 @@ footer {
         display: flex;
         flex-direction: row;
         gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-text2 {
+        width: 21.9375rem;
+        height: 13.25rem;
+    }
+
+    .section-image {
+        width: 37.94rem;
+        height: 24.625rem;
+    }   
+
+    #section-1 img, #section-2 img, #section-3 img {
+        width: 37.94rem;
+        height: 24.625rem;
+    }
+    
+    #section-3 {
+        width: 100%;
+        height: 28rem;
+        margin: 2.47rem 0;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-text3 {
+        width: 21.9375rem;
+        height: 14.265rem;
+    }
+
+    #section-4 {
+        width: 100%;
+        height: 46.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section-4 h2 {
+        width: 38rem;
+        height: 5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section-4 p {
+        width: 50.125rem;
+        height: 2.75rem;
+    }
+
+    .section-image4, .section-image4 img {
+        width: 49rem;
+        height: 31.75rem;
+    }
+
+    .logo {
+        width: 100%;
+        height: 8.375rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 14.375rem;
+        height: 3.9375rem;
     }
 }
